@@ -1,5 +1,6 @@
 # taken from this StackOverflow answer: https://stackoverflow.com/a/39225039
 import requests
+import os
 
 
 def download_file_from_google_drive(id, destination):
@@ -39,5 +40,15 @@ if __name__ == "__main__":
     print("[Inbound] Downloading file")
     file_id = '1RRCebapHBsO3xXEcYmJY0GmnlXUcAp3j'
     destination = './data/inbound/all_data.zip'
-    download_file_from_google_drive(file_id, destination)
+
+    # To ensure that the file is really downloaded
+    # (sometimes it only downloads the confirmation message)
+    while True:
+        download_file_from_google_drive(file_id, destination)
+
+        file_size = os.path.getsize(destination)
+
+        if file_size > 10000000:
+            break
+
     print("[Inbound] End")
