@@ -1,6 +1,5 @@
 # taken from this StackOverflow answer: https://stackoverflow.com/a/39225039
 import requests
-import os
 
 
 def download_file_from_google_drive(id, destination):
@@ -20,7 +19,7 @@ def download_file_from_google_drive(id, destination):
 
 def get_confirm_token(response):
     for key, value in response.cookies.items():
-        if key.startswith('download_warning'):
+        if 'download_warning' in key:
             return value
 
     return None
@@ -40,15 +39,5 @@ if __name__ == "__main__":
     print("[Inbound] Downloading file")
     file_id = '1RRCebapHBsO3xXEcYmJY0GmnlXUcAp3j'
     destination = './data/inbound/all_data.zip'
-
-    # To ensure that the file is really downloaded
-    # (sometimes it only downloads the confirmation message)
-    while True:
-        download_file_from_google_drive(file_id, destination)
-
-        file_size = os.path.getsize(destination)
-
-        if file_size > 10000000:
-            break
-
+    download_file_from_google_drive(file_id, destination)
     print("[Inbound] End")

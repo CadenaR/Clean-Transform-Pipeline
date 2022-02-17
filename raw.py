@@ -3,6 +3,7 @@ from zipfile import ZipFile
 
 
 def save_raw_data(inbound_path, raw_path):
+    #  Unzipping file
     with ZipFile(
         inbound_path,
         "r",
