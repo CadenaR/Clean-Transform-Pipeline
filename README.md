@@ -10,7 +10,7 @@ After the container is running, it will give you 3 links. Use the last one, it s
 Clone this repository inside the Airflow dashboard, you just have to introduce the repository's link `https://github.com/CadenaR/Clean-Transform-Pipeline`
 
 ## Using the Pipeline
-For using this pipeline, you just have to open the CleanTransform.pipeline file and then press the run pipeline button.
+For using this pipeline, you just have to open the `CleanTransform.pipeline` file and then press the run pipeline button.
 
 If the following error appears:
 ```
