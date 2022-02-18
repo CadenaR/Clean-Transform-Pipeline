@@ -16,5 +16,5 @@ If the following error appears:
 ```
 Error processing operation raw (raw.py): zipfile.BadZipFile: File is not a zip file
 ```
-It means there is a problem with the download, a solution to this is to manually download the [file](https://drive.google.com/file/d/1vDvkbR3RkDhJAmqfCRgcdv5nVPFEXQis/view?usp=sharing), then drag and drop it into the `data/inbound` folder inside the dashboard and remove the inbound layer from the pipeline file.
+It means there is a problem with the download, a solution to this is to manually download the [file](https://drive.google.com/file/d/1vDvkbR3RkDhJAmqfCRgcdv5nVPFEXQis/view?usp=sharing){:target="_blank"}, then drag and drop it into the `data/inbound` folder inside the dashboard and remove the inbound layer from the pipeline file.
 After this is done, you can run the pipeline again, and ther should not be a problem.
