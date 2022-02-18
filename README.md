@@ -1,7 +1,7 @@
 # PySpark Clean and Transform Pipeline
 
 ## Before cloning this repository:
-Install the pyspark-elyra Docker Image from ruslanmv with the following command
+Install and run the pyspark-elyra Docker Image from ruslanmv with the following command
 ```
 docker run -p 8888:8888 ruslanmv/pyspark-elyra:3.1.2
 ```
