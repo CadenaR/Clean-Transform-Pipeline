@@ -49,7 +49,7 @@ def refine_data(raw_data_path, refined_path):
 
 if __name__ == "__main__":
     print("[Refined] Start")
-    raw_data_path = "./data/raw/all_data.csv"
-    refined_path = "./data/refined/all_data_refined"
+    raw_data_path = "../data/raw/all_data.csv"
+    refined_path = "../data/refined/all_data_refined"
     refine_data(raw_data_path, refined_path)
     print("[Refined] End")

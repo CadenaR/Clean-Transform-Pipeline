@@ -37,7 +37,7 @@ def save_response_content(response, destination):
 if __name__ == "__main__":
     print("[Inbound] Start")
     print("[Inbound] Downloading file")
-    file_id = '1RRCebapHBsO3xXEcYmJY0GmnlXUcAp3j'
-    destination = './data/inbound/all_data.zip'
+    file_id = '1vDvkbR3RkDhJAmqfCRgcdv5nVPFEXQis'
+    destination = '../data/inbound/all_data.zip'
     download_file_from_google_drive(file_id, destination)
     print("[Inbound] End")

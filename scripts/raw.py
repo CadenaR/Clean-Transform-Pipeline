@@ -22,7 +22,7 @@ def save_raw_data(inbound_path, raw_path):
 if __name__ == "__main__":
     print("[Raw] Start")
     print("[Raw] Unzipping file")
-    inbound_path = './data/inbound/all_data.zip'
-    raw_path = './data/raw/'
+    inbound_path = '../data/inbound/all_data.zip'
+    raw_path = '../data/raw/'
     save_raw_data(inbound_path, raw_path)
     print("[Raw] End")
